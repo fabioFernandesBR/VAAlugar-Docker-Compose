@@ -32,14 +32,7 @@ services:
     ports:
       - "5004:5000"
 
-  vaalugar-frontend:
-    build: ./VAAlugar-FrontEnd
-    container_name: vaalugar-frontend
-    ports:
-      - "8080:80"
-    networks:
-      - rede_vaalugar
-
+  
 networks:
   rede_vaalugar:
     driver: bridge
