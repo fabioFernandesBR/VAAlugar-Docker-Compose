@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   vaalugar-gateway:
-    build: ./VAAlugar-Gateway
+    build: ./VAAlugar-MS-gateway
     container_name: vaalugar-gateway
     networks:
       - rede_vaalugar
@@ -9,7 +9,7 @@ services:
       - "5001:5000"
 
   vaalugar-canoas:
-    build: ./VAAlugar-Canoas
+    build: ./VAAlugar-MS-gerir_canoas_2
     container_name: vaalugar-canoas
     networks:
       - rede_vaalugar
@@ -17,7 +17,7 @@ services:
       - "5002:5000"
 
   vaalugar-reservas:
-    build: ./VAAlugar-Reservas
+    build: ./VAAlugar-MS-reservar
     container_name: vaalugar-reservas
     networks:
       - rede_vaalugar
@@ -25,7 +25,7 @@ services:
       - "5003:5000"
 
   vaalugar-avaliacoes:
-    build: ./VAAlugar-Avaliacoes
+    build: ./VAAlugar-MS-avaliacoes
     container_name: vaalugar-avaliacoes
     networks:
       - rede_vaalugar
