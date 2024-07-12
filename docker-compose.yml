@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  vaalugar-gateway:
+    build: ./VAAlugar-Gateway
+    container_name: vaalugar-gateway
+    networks:
+      - rede_vaalugar
+    ports:
+      - "5001:5000"
+
+  vaalugar-canoas:
+    build: ./VAAlugar-Canoas
+    container_name: vaalugar-canoas
+    networks:
+      - rede_vaalugar
+    ports:
+      - "5002:5000"
+
+  vaalugar-reservas:
+    build: ./VAAlugar-Reservas
+    container_name: vaalugar-reservas
+    networks:
+      - rede_vaalugar
+    ports:
+      - "5003:5000"
+
+  vaalugar-avaliacoes:
+    build: ./VAAlugar-Avaliacoes
+    container_name: vaalugar-avaliacoes
+    networks:
+      - rede_vaalugar
+    ports:
+      - "5004:5000"
+
+  vaalugar-frontend:
+    build: ./VAAlugar-FrontEnd
+    container_name: vaalugar-frontend
+    ports:
+      - "8080:80"
+    networks:
+      - rede_vaalugar
+
+networks:
+  rede_vaalugar:
+    driver: bridge
