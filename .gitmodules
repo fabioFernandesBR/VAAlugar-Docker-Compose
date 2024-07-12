@@ -1,0 +1,18 @@
+[submodule "VAAlugar-Gateway"]
+	path = VAAlugar-Gateway
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-gateway.git
+[submodule "VAAlugar-Canoas"]
+	path = VAAlugar-Canoas
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-gerir_canoas_2.git
+[submodule "VAAlugar-Reservas"]
+	path = VAAlugar-Reservas
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-reservar.git
+[submodule "VAAlugar-MS-avaliacoes"]
+	path = VAAlugar-MS-avaliacoes
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-avaliacoes.git
+[submodule "VAAlugar-Avaliacoes"]
+	path = VAAlugar-Avaliacoes
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-avaliacoes.git
+[submodule "VAAlugar-FrontEnd"]
+	path = VAAlugar-FrontEnd
+	url = https://github.com/fabioFernandesBR/VAAlugar-MS-FrontEnd.git
